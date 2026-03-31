@@ -6,3 +6,17 @@
 # Saída (exemplo):
 # Domínios: {ex.com, uni.br}
 # Total: 2
+
+entrada = "Ana@Ex.com JOAO@ex.com maria@uni.br pedro@uni.br".split()
+
+dominios = set()
+
+for email in entrada:
+    email = email.lower()
+    dominio = email.split("@")[1]
+    dominios.add(dominio)
+
+print("Domínios:", dominios)
+print("Total:", len(dominios))
+
+
