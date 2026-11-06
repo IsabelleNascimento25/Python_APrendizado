@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>Lia — Aprender a Ler</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-screen="satisfacao">
+  <main class="layout">
+    <aside class="intro" aria-label="Navegação do protótipo">
+      <h1>📚 Lia — Aprender a Ler</h1>
+      <p>Protótipo interativo de alfabetização. Use as etapas para explorar a jornada ou navegue pelo celular.</p>
+      <nav class="group-tabs" id="groupTabs" aria-label="Etapas principais"></nav>
+      <nav class="map" id="stageMap" aria-label="Telas da etapa"></nav>
+      <p class="small" style="margin-top:16px">Protótipo demonstrativo: os dados não são enviados a um servidor.</p>
+    </aside>
+
+    <section class="phone" aria-label="Aplicativo de alfabetização">
+      <header class="phone-top">
+        <span style="display:flex;align-items:center;gap:8px"><button class="speak-screen" id="backBtn" type="button" data-go="modulo" aria-label="Voltar para escolher outra atividade" hidden>⬅️</button><span id="stageLabel">🏡 Preparação</span></span>
+        <span><button class="speak-screen" type="button" data-action="read-screen" aria-label="Ouvir esta tela">🔊</button> <span id="starCounter" aria-live="polite">⭐ 0</span></span>
+      </header>
+      <div class="screen" id="screen" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
